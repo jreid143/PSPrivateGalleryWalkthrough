@@ -76,7 +76,7 @@
   "resources": [
     {
       "type": "Microsoft.Storage/storageAccounts",
-      "name": "[concat(uniquestring(resourceGroup().id),'sa')]",
+      "name": "[parameters('newStorageAccountName')]", 
       "apiVersion": "2015-05-01-preview",
       "location": "[resourceGroup().location]",
       "properties": {
